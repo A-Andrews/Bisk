@@ -4,7 +4,7 @@
 
 ## key concept
 
-- risk but with biscuists
+- risk but with biscuits
 - different biscuits are different biscuits
 - different factions are different brands
 - humans will eat from a stockpile but if stockpile is too low they will eat your units
