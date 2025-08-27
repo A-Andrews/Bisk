@@ -6,7 +6,7 @@ class Faction:
     def __init__(self, name, colour, starting_territories=None):
         self.name = name
         self.colour = colour
-        self.territories = Set()
+        self.territories = Set(starting_territories)
         self.stockpile = 0
         self.resources = {}
         self.units = {}
