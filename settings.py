@@ -1,4 +1,4 @@
-WIDTH, HEIGHT = 1920, 1080
+WIDTH, HEIGHT = 1280, 720
 FPS = 60
 TITLE = "Bisk"
 
@@ -19,3 +19,16 @@ START_MENU_TAG_OFFSET = 64
 TITLE_FONT_SIZE = 96
 BODY_FONT_SIZE = 28
 BUTTON_FONT_SIZE = 40
+
+# Board
+BOARD_PADDING = 10  # pixels between edge of screen and board
+BOARD_X_DIM = 5  # Number of cells on x-axis
+BOARD_Y_DIM = 4  # Number of cells on y-axis
+
+# Regions
+REGION_COUNT = 5
+
+# Territories
+TERRITORY_COUNT = 20
+
+assert TERRITORY_COUNT <= BOARD_X_DIM * BOARD_Y_DIM  # Need enough board space
