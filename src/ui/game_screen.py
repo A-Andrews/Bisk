@@ -2,6 +2,7 @@ import pygame as pg
 
 from settings import FG, HEIGHT, WIDTH
 from src.core.scene import Scene
+from src.game.board import Board
 
 
 class GameScene(Scene):
@@ -16,5 +17,8 @@ class GameScene(Scene):
 
     def draw(self, surf):
         surf.fill((10, 12, 18))
-        msg = self.font.render("Playing…", True, FG)
-        surf.blit(msg, msg.get_rect(center=(WIDTH // 2, HEIGHT // 2)))
+        # msg = self.font.render("Playing…", True, FG)
+        # surf.blit(msg, msg.get_rect(center=(WIDTH // 2, HEIGHT // 2)))
+        # pg.time.delay(3000)  # simulate loading ...
+        board = Board()
+        board.draw(surf)

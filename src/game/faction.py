@@ -1,12 +1,14 @@
-from typing import Set
+from src.game.territory import Territory
+from pygame.color import Color
 
 
 class Faction:
-
-    def __init__(self, name, colour, starting_territories=None):
+    def __init__(
+        self, name, colour: Color, starting_territories: set[Territory] = set()
+    ):
         self.name = name
         self.colour = colour
-        self.territories = Set(starting_territories)
+        self.territories = set(starting_territories)
         self.stockpile = 0
         self.resources = {}
         self.units = {}
