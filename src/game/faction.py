@@ -30,3 +30,6 @@ class Faction:
 
     def add_to_stockpile(self, amount):
         self.stockpile += amount
+
+    def update(self):
+        pass
